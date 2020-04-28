@@ -1,0 +1,201 @@
+.card {
+  background: #fff;
+  border-radius: 0.16rem;
+  padding: 0.6rem 0.3rem;
+
+  .color1 {
+    color: #2474f9;
+  }
+
+  .color2 {
+    color: #ff7512;
+  }
+
+  .fs44 {
+    font-size: 0.44rem;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 0.38rem;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 0.52rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title-icon,
+    .title-icon2,
+    .title-icon3,
+    .title-icon4 {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 0 0.14rem;
+      vertical-align: center;
+    }
+
+    .title-icon {
+      background-image: url(../img/title-icon.png);
+    }
+
+    .title-icon2 {
+      background-image: url(../img/title-icon2.png);
+    }
+
+    .title-icon3 {
+      background-image: url(../img/title-icon3.png);
+    }
+
+    .title-icon4 {
+      background-image: url(../img/title-icon4.png);
+    }
+
+    > span {
+      position: relative;
+      z-index: 1;
+    }
+
+    > span::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 50%;
+      z-index: -1;
+    }
+
+    &.bg-1 > span > span {
+      color: #2474f9;
+    }
+
+    &.bg-1 > span:before {
+      background: #e6f3ff;
+    }
+
+    &.bg-2 > span > span {
+      color: #ff7512;
+    }
+
+    &.bg-2 > span:before {
+      background: #ffeae1;
+    }
+  }
+
+  .title1 {
+    font-size: .28rem;
+
+    .title-icon,
+    .title-icon2,
+    .title-icon3,
+    .title-icon4 {
+      margin: 0 0.04rem;
+    }
+  }
+
+  .sub-title {
+    font-size:.22rem;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(153,153,153,1);
+    line-height:.32rem;
+    margin-top: .06rem;
+    text-align: center;
+  }
+
+  .card-list {
+    padding: 0.2rem 0 0;
+    .card-item {
+      margin-top: 0.2rem;
+      width: 100%;
+      position: relative;
+      padding: 0.3rem 0.46rem 0.3rem 0.7rem;
+      border-radius: .08rem;
+
+      &.s1 {
+        background: #e6f3ff;
+      }
+
+      .info-title {
+        font-size: 0.34rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(51, 51, 51, 1);
+        line-height: 0.48rem;
+      }
+
+      .info-desc {
+        font-size: 0.26rem;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        line-height: 0.36rem;
+        text-align: justify;
+      }
+
+      .tag {
+        width: 0.88rem;
+        height: 0.82rem;
+        background: url(../img/tag.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-left: 0.14rem;
+        font-size: 0.4rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        line-height: 0.56rem;
+      }
+    }
+    .card-tips {
+      margin-top: 0.2rem;
+      font-size: 0.24rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      line-height: 0.34rem;
+      display: flex;
+      justify-content: space-between;
+
+      .red {
+        color: #f14d1f;
+      }
+    }
+  }
+
+  .desc1 {
+    font-size:.28rem;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    line-height: .42rem;
+    text-align: justify;
+  }
+
+  .desc2 {
+    font-size:.28rem;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:#666666;
+    line-height:.42rem;
+    text-align: justify;
+  }
+
+  .desc3 {
+      font-size:.24rem;
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:#666666;
+      line-height: .34rem;
+      text-align: justify;
+  }
+
+}

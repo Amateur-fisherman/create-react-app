@@ -1,0 +1,200 @@
+
+.mod-location, .mod-SlctAll{
+    position: fixed;
+    z-index: 12;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    width: 100%;
+    word-break: break-all;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    color: #303030;
+
+    &.on{
+        left: 0;
+    }
+
+    .child, .wrap-brand{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .head{
+        z-index: 1;
+        position: relative;
+        height: 40px;
+        padding: 0 6px;
+        line-height: 38px;
+        font-size: 14px;
+        background: #e2e1e1;
+        border-top: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+        color: #797f83;
+        font-weight: normal;
+
+        .icon-cls{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+        }
+    }
+
+    .letter{
+        padding: 0 3px 5px;
+        border-bottom: 1px solid #F5F5F5;
+
+        li{
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            border: solid 1px #B4B4B4;
+            color: #6f6f6f;
+            text-align: center;
+            line-height: 22px;
+            border-radius: 11px;
+            margin: 5px 2px 0;
+            text-decoration: none;
+        }
+    }
+
+    .list{
+        z-index: 1;
+        position: absolute;
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        .title{
+            font-size: 13px;
+            color: #797f83;
+            padding-left: 8px;
+            height: 40px;
+            line-height: 40px;
+            background: #f5f5f5;
+        }
+
+        li{
+            position: relative;
+            padding: 12px 11px 13px 8px;
+            line-height: 18px;
+            border-bottom: 1px solid #F5F5F5;
+            background: #fff;
+            font-size: 16px;
+
+            &.on{
+                color:#ff910d;
+            }
+
+            .iconRightArrow{
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                width: 7px;
+                height: 12px;
+                margin-top: -6px;
+            }
+        }
+
+        .direct-city{
+            .iconRightArrow{
+                display: none;
+            }
+        }
+
+        .mod-title{
+            height: 40px;
+            padding-top: 0;
+            padding-bottom: 0;
+            line-height: 40px;
+            background: #f5f5f5;
+        }
+    }
+
+    .others{
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: 0 0 20px #C9CACA;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        background: #fff;
+
+        &.on{
+            transform: translate3d(-100%, 0, 0);
+            -webkit-transform: translate3d(-100%, 0, 0);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            perspective: 1000px;
+            -webkit-perspective: 1000px;
+        }
+    }
+
+}
+
+.mod-location{
+    .brand{
+        .letter{
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 50px;
+            padding: 0 20px 0 0;
+            text-align: center;
+            border: none;
+            -webkit-transform: translate3D(0, -50%, 0);
+            transform: translate3D(0, -50%, 0);
+
+            li{
+                height: 16px;
+                line-height: 16px;
+                margin: 0;
+                border: none;
+            }
+        }
+
+        .list{
+            top: 0;
+        }
+
+        .hot-brand-list{
+            padding-right: 50px;
+
+            .mod-title{
+                margin-right: -50px;
+            }
+
+            .mod-opt{
+                float: left;
+                width: 25%;
+                height: 40px;
+                line-height: 40px;
+                padding: 0;
+                list-style: none;
+                border: none;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+}
