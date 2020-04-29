@@ -6,7 +6,6 @@ const defaultData = {
   cityConfig: {
     cityName: '武汉',
     cityCode: '420100',
-    isShow: false
   }
 }
 
